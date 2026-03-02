@@ -1,18 +1,21 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://uuid-generator-1-hse5.onrender.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://uuid-generator-1-hse5.onrender.com/privacy.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://uuid-generator-1-hse5.onrender.com/terms.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
+  <url><loc>https://your-domain.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://your-domain.com/version1</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://your-domain.com/version4</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://your-domain.com/version7</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://your-domain.com/nil</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://your-domain.com/guid</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://your-domain.com/dev-corner</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://your-domain.com/api-docs</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://your-domain.com/dev/java</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://your-domain.com/dev/javascript</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://your-domain.com/dev/python</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://your-domain.com/dev/go</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://your-domain.com/dev/csharp</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://your-domain.com/dev/php</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://your-domain.com/dev/ruby</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://your-domain.com/dev/kotlin</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://your-domain.com/privacy.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://your-domain.com/terms.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
