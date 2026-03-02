@@ -3,9 +3,11 @@ import {
   decodeJwtParts,
   deepSort,
   diffLines,
+  generatePassword,
   markdownToHtml,
   parseCsvLine,
-  simpleYamlToObj
+  simpleYamlToObj,
+  validateCronExpression
 } from '../src/utils/toolUtils.js'
 
 function run(name, fn) {
@@ -52,6 +54,22 @@ run('diffLines should mark removed and added lines', () => {
   const out = diffLines('a\nb', 'a\nc')
   assert.ok(out.includes('- b'))
   assert.ok(out.includes('+ c'))
+})
+
+run('validateCronExpression should validate standard cron', () => {
+  const ok = validateCronExpression('*/5 * * * *', false)
+  assert.equal(ok.ok, true)
+  const invalid = validateCronExpression('99 * * * *', false)
+  assert.equal(invalid.ok, false)
+})
+
+run('generatePassword should include selected classes', () => {
+  const password = generatePassword(16, { lower: true, upper: true, numbers: true, symbols: true })
+  assert.equal(password.length, 16)
+  assert.ok(/[a-z]/.test(password))
+  assert.ok(/[A-Z]/.test(password))
+  assert.ok(/[0-9]/.test(password))
+  assert.ok(/[^A-Za-z0-9]/.test(password))
 })
 
 if (process.exitCode === 1) {
