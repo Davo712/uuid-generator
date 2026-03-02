@@ -7,21 +7,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class SpaPageController {
 
     @GetMapping({
+            "/uuid-generator",
+            "/developer-tools",
+            "/converters",
+            "/generators",
+            "/api-docs",
+            "/dev-corner",
             "/version1",
             "/version4",
             "/version7",
             "/nil",
             "/guid",
-            "/dev-corner",
-            "/api-docs",
-            "/dev/java",
-            "/dev/javascript",
-            "/dev/python",
-            "/dev/go",
-            "/dev/csharp",
-            "/dev/php",
-            "/dev/ruby",
-            "/dev/kotlin"
+            "/tools/{*path}"
     })
     public String index() {
         return "forward:/index.html";
