@@ -1,0 +1,9 @@
+services:
+  uuid-generator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: uuid-generator
+    ports:
+      - "8082:8080"
+    restart: unless-stopped

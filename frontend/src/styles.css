@@ -1,0 +1,180 @@
+﻿:root {
+  --bg: #f4f8ff;
+  --surface: #ffffff;
+  --ink: #1a2238;
+  --accent: #0066cc;
+  --muted: #56607a;
+  --border: #d7e1f4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  color: var(--ink);
+  background: radial-gradient(circle at top right, #dff0ff 0%, var(--bg) 45%);
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hero {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h1 {
+  margin: 0.5rem 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.card,
+.content,
+.ad-slot {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+  margin: 1rem 0;
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 400px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.jump-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.jump-links a {
+  color: var(--accent);
+  text-decoration: none;
+  background: #e9f2ff;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+}
+
+button,
+input {
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: 0.55rem 0.8rem;
+  font-size: 0.95rem;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 0.8rem;
+  display: block;
+  background: #f6f9ff;
+  border-radius: 10px;
+  padding: 0.8rem;
+  overflow-wrap: anywhere;
+}
+
+.uuid-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.uuid-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.55rem;
+  background: #f9fbff;
+}
+
+.error {
+  color: #b30024;
+  background: #ffe9ed;
+  border: 1px solid #f4b6c0;
+  border-radius: 10px;
+  padding: 0.75rem;
+}
+
+.ad-slot {
+  min-height: 110px;
+  flex-direction: column;
+  gap: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--muted);
+  border-style: dashed;
+}
+
+.ad-slot p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.ad-slot small {
+  font-size: 0.85rem;
+}
+
+.plain-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  line-height: 1.7;
+}
+
+footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+@media (max-width: 680px) {
+  .uuid-list li {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
